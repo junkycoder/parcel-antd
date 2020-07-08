@@ -16,6 +16,7 @@
         "libraryDirectory": "es",
         "style": "css"
       }
-    ]
+    ],
+    "@babel/plugin-transform-flow-strip-types"
   ]
 }

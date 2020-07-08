@@ -1,13 +1,16 @@
+
+
+// @flow
 import React from "react";
 import { Button } from "antd";
 
-import "./style/index.less";
+import "/style/index.css";
 
-interface IApp {
-  title: string;
+type AppProps = {
+  title: String
 }
 
-const App: React.FC<IApp> = ({ title }) => {
+export default function App({ title }: AppProps) {
   return (
     <>
       <p className={"foo"}>Hi! {title}</p>
@@ -21,5 +24,3 @@ const App: React.FC<IApp> = ({ title }) => {
     </>
   );
 };
-
-export default App;

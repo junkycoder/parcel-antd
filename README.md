@@ -3,10 +3,8 @@
 ## Include
 
 - React
-- TypeScript
 - Antd
 - Parcel
-- Less
 - Babel7
 
 ## Start
