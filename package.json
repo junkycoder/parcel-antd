@@ -25,6 +25,8 @@
     "parcel-plugin-bundle-visualiser": "^1.2.0"
   },
   "dependencies": {
+    "@aws-amplify/auth": "^3.3.1",
+    "@aws-amplify/core": "^3.4.2",
     "@babel/plugin-transform-flow-strip-types": "^7.10.4",
     "antd-mobile": "^2.3.3",
     "parcel-bundler": "^1.12.4",
