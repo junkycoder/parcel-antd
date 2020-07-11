@@ -30,6 +30,7 @@
     "@babel/plugin-transform-flow-strip-types": "^7.10.4",
     "antd-mobile": "^2.3.3",
     "parcel-bundler": "^1.12.4",
+    "parse": "^2.14.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

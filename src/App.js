@@ -1,15 +1,17 @@
 // @flow
-import React from "react";
-import { Button, Icon } from 'antd-mobile';
-
+import React, { Suspense } from "react";
+import { Button } from 'antd-mobile';
 
 import "./style/index.css";
+const SomeLazyComponent = React.lazy(() => import('./SomeComponent'));
+
 
 type AppProps = {
   title: String
 }
 
 export default function App({ title }: AppProps) {
+  console.log(Parse.serverURL)
   return (
     <>
       <p className={"foo"}>Hi! {title}</p>
@@ -20,7 +22,9 @@ export default function App({ title }: AppProps) {
       <Button type="primary" href={"https://parceljs.org/"}>
         Parcel Docs
       </Button>
-      <Icon type="search" size="lg" />
+      <Suspense fallback="Loading...">
+        <SomeLazyComponent />
+      </Suspense>
     </>
   )
 }
