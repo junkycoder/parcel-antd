@@ -16,6 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-flow-strip-types": "^7.10.4",
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
     "@types/node": "^14.0.13",
@@ -27,7 +28,6 @@
   "dependencies": {
     "@aws-amplify/auth": "^3.3.1",
     "@aws-amplify/core": "^3.4.2",
-    "@babel/plugin-transform-flow-strip-types": "^7.10.4",
     "antd-mobile": "^2.3.3",
     "parcel-bundler": "^1.12.4",
     "parse": "^2.14.0",
