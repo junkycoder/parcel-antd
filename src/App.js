@@ -1,10 +1,8 @@
-
-
 // @flow
 import React from "react";
-import { Button } from "antd";
+import { Button } from 'antd-mobile';
 
-import "/style/index.css";
+import "./style/index.css";
 
 type AppProps = {
   title: String
@@ -22,5 +20,5 @@ export default function App({ title }: AppProps) {
         Parcel Docs
       </Button>
     </>
-  );
-};
+  )
+}

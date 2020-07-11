@@ -1,9 +1,14 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import App from "./App";
+import('./App').then(module => render(module.default));
 
-ReactDOM.render(
-  <App title="Ant Design & Parcel." />,
-  document.getElementById("root")
-);
+
+
+function render(App) {
+  ReactDOM.render(
+    <App title="Ant Design & Parcel." />,
+    document.getElementById("root")
+  );
+}
+

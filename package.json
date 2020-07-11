@@ -4,8 +4,9 @@
   "description": "Use antd in parcel",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "clean": "rm -rf dist",
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --no-source-maps"
   },
   "keywords": [
     "Ant Design",
@@ -20,11 +21,12 @@
     "@types/node": "^14.0.13",
     "@types/react": "^16.9.36",
     "@types/react-dom": "^16.9.8",
-    "babel-plugin-import": "^1.13.0"
+    "babel-plugin-import": "^1.13.0",
+    "parcel-plugin-bundle-visualiser": "^1.2.0"
   },
   "dependencies": {
     "@babel/plugin-transform-flow-strip-types": "^7.10.4",
-    "antd": "^3.26.18",
+    "antd-mobile": "^2.3.3",
     "parcel-bundler": "^1.12.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
