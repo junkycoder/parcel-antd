@@ -1,6 +1,7 @@
 // @flow
 import React from "react";
-import { Button } from 'antd-mobile';
+import { Button, Icon } from 'antd-mobile';
+
 
 import "./style/index.css";
 
@@ -19,6 +20,7 @@ export default function App({ title }: AppProps) {
       <Button type="primary" href={"https://parceljs.org/"}>
         Parcel Docs
       </Button>
+      <Icon type="search" size="lg" />
     </>
   )
 }
