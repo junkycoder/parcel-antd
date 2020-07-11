@@ -1,26 +1,20 @@
-# Ant Design Demo For Parcel
+# Mobile Ant Design Demo For Parcel
 
 ## Include
 
 - React
-- Antd
+- Mobile Antd
 - Parcel
 - Babel7
+- Amplify
+
 
 ## Start
 
 ```bash
 npm install
-npm run dev
+npm start
 npm run build
-```
-
-or
-
-```bash
-yarn
-yarn dev
-yarn build
 ```
 
 Visit http://localhost:1234
