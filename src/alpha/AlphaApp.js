@@ -1,17 +1,18 @@
 // @flow
 import React, { Suspense } from "react";
 import { Button } from 'antd-mobile';
+import "./styles/index.css";
 
-import "./style/index.css";
-const SomeLazyComponent = React.lazy(() => import('./SomeComponent'));
+const SomeLazyComponent = React.lazy(() => import('./components/SomeComponent'));
 
 
 type AppProps = {
   title: String
 }
 
-export default function App({ title }: AppProps) {
+export default function AlphaApp({ title }: AppProps) {
   console.log(Parse.serverURL)
+
   return (
     <>
       <p className={"foo"}>Hi! {title}</p>

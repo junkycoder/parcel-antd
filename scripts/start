@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+if [ $# -eq 0 ]
+  then
+    echo "\n\nSelect the application you wish to start:\n"
+    select selectedApp in $(sh scripts/list-apps)
+      do
+        npm start -- "$selectedApp"
+      done
+  else
+    npm run "start:$1"
+fi

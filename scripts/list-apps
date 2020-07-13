@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ls -d src/*/package.json | sed -e "s/^src\///" -e "s/\/package\.json$//"

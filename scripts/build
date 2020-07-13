@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+if [ $# -eq 0 ]
+  then
+    echo "\n\nBuilding all apps...\n"
+    for app in $(sh scripts/list-apps)
+      do
+        npm run "build:$app"
+    done
+  else
+    npm run "build:$1"
+fi

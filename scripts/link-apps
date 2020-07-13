@@ -1,0 +1,13 @@
+#!/bin/bash
+list=$(sh scripts/list-apps)
+
+for app in $list
+  do
+    pushd "src/$app/";
+    for a in $list
+      do
+        npm install "../$a"
+        npm link "../$a"
+      done
+    popd;
+  done
